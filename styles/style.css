@@ -36,3 +36,42 @@ ul,
 ol {
   list-style: none;
 }
+
+.content {
+  display: flex;
+  height: 800px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 133px 30px;
+  gap: 30px;
+}
+
+
+.result__video-container {
+  position: relative;
+  width: 711px;
+  height: 386px;
+  background-color: black;
+}
+
+.search-form {
+  display: flex;
+  gap: 40px;
+  align-items: start;
+}
+
+.content__details {
+  align-self: center;
+  width: 400px;
+  
+}
+
+.content__list {
+  overflow: auto;
+  max-height: 298px;
+}
+
+.content__video-card-thumbnail{
+  width: 194px;
+  height: 103px;
+}
