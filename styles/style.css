@@ -37,9 +37,14 @@ ol {
   list-style: none;
 }
 
+body {
+  
+}
+
 .content {
   display: flex;
   height: 800px;
+  align-items: end;
   max-width: 1200px;
   margin: 0 auto;
   padding: 133px 30px;
@@ -51,17 +56,25 @@ ol {
   position: relative;
   width: 711px;
   height: 386px;
-  background-color: black;
+}
+
+.result__video {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
 }
 
 .search-form {
+  margin-top: 11px;
   display: flex;
   gap: 40px;
   align-items: start;
 }
 
 .content__details {
-  align-self: center;
   width: 400px;
   
 }
