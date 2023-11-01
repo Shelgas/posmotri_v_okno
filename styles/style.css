@@ -68,6 +68,18 @@ ol {
   cursor: pointer;
 }
 
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
 .result__video-container {
   position: relative;
   width: 711px;
@@ -86,7 +98,7 @@ ol {
 
 .search-form {
   display: flex;
-  align-items: end;
+  align-items: start;
   justify-content: space-between;
 }
 
@@ -99,19 +111,24 @@ ol {
   cursor: pointer;
 }
 
+.search-form__label:hover {
+  text-decoration: underline;
+}
+
 .search-form__fieldset-title {
   font-size: 18px;
   font-style: normal;
   font-weight: normal;
-  line-height: 36px;
+  padding: 4px 0;
+  /* line-height: 36px; */
 }
 
 .search-form__textfield {
-  cursor: pointer;
   background-color: transparent;
   border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
+  color: #fff;
   font-family: inherit;
   font-size: 18px;
   font-style: normal;
@@ -121,8 +138,21 @@ ol {
   width: 225px;
 }
 
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__label:focus {
+  outline: none;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+}
+
 .search-form__checkbox-list {
   display: flex;
+  align-self: start;
   column-gap: 15px;
   justify-content: space-between;
 }
@@ -146,6 +176,7 @@ ol {
 
 .search-form__submit-button {
   width: 194px;
+  align-self: end;
 }
 
 .content__accent {
@@ -167,8 +198,37 @@ ol {
   margin-top: 26px;
 }
 
+
 .content__list-item:not(:last-child) {
-  margin-bottom: 34px;
+  margin-bottom: 30px;
+}
+
+.content__card-link {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  margin: 3px;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.content__card-link:active {
+  border: 2px solid white;
+}
+
+.content__card-link_current {
+  background-color: #545050;
+}
+
+.content__video-card {
+  display: flex;
+  height: 107px;
+  overflow: hidden;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .content__video-card-title {
@@ -176,20 +236,16 @@ ol {
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
-  line-height: 100%;
+  line-height: 30px;  
   text-transform: uppercase;
   text-decoration: none;
 }
 
-.content__card-link {
-  text-decoration: none;
-  color: #fff;
+.content__video-card-description {
+  margin-top: 6px;
+  line-height: 16.2px;
 }
-.content__video-card {
-  display: flex;
-  align-items: flex-start;
-  width: 100%;
-}
+
 
 .content__video-card-description-container {
   flex: 1;
@@ -200,6 +256,7 @@ ol {
   height: 103px;
   width: 194px;
   object-fit: cover;
+  object-position: center;
 }
 
 .more-button {
