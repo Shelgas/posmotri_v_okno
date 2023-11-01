@@ -58,10 +58,10 @@ ol {
 
 .button {
   height: 34px;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  border: 1px solid #FFFFFF;
+  font-family: "Fira Sans Condensed", sans-serif;
+  border: 1px solid #ffffff;
   background: transparent;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 700;
   text-align: center;
@@ -88,7 +88,6 @@ ol {
 }
 
 .result__video {
-  position: absolute;
   inset: 0;
   object-fit: cover;
   object-position: center;
@@ -162,13 +161,13 @@ ol {
   width: 19px;
   display: inline-block;
   vertical-align: middle;
-  outline: 1px solid #FFFFFF;
+  outline: 1px solid #ffffff;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
   content: "";
   display: inline-block;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   inline-size: 15px;
   block-size: 15px;
   margin: 2px;
@@ -197,7 +196,6 @@ ol {
   padding-right: 4px;
   margin-top: 26px;
 }
-
 
 .content__list-item:not(:last-child) {
   margin-bottom: 30px;
@@ -236,7 +234,7 @@ ol {
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30px;  
+  line-height: 30px;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -245,7 +243,6 @@ ol {
   margin-top: 6px;
   line-height: 16.2px;
 }
-
 
 .content__video-card-description-container {
   flex: 1;
